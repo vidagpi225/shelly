@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.timer-box {
+  background: #e0f2fe;
+  border: 3px solid #3b82f6;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#timer {
+  font-size: 48px;
+  color: #1d4ed8;
+  font-family: monospace;
+}
+
+.controls button,
+.custom-time button,
+.task-input button,
+.music button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+#startPause { background: #22c55e; }
+#reset { background: #eab308; }
+#setTime { background: #3b82f6; }
+#addTask { background: #6366f1; }
+#playYoutube { background: #a855f7; }
+
+.controls button:hover,
+.custom-time button:hover,
+.task-input button:hover,
+.music button:hover {
+  opacity: 0.9;
+}
+
+.tasks {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.task-input {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+#taskList button {
+  background: transparent;
+  color: red;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.music {
+  margin-top: 20px;
+}
+
+#youtubeUrl {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

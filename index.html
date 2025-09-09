@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⏳ Pomodoro Timer</h1>
+
+    <!-- Timer -->
+    <div class="timer-box">
+      <h2 id="timer">25:00</h2>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="startPause">▶ Start</button>
+      <button id="reset">⟳ Reset</button>
+    </div>
+
+    <!-- Custom Time -->
+    <div class="custom-time">
+      <input type="number" id="customMinutes" value="25" min="1"> minutes
+      <button id="setTime">Set</button>
+    </div>
+
+    <!-- Task Manager -->
+    <div class="tasks">
+      <h3>📋 Tasks</h3>
+      <div class="task-input">
+        <input type="text" id="newTask" placeholder="New Task...">
+        <button id="addTask">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music">
+      <h3>🎵 Play YouTube Music</h3>
+      <input type="text" id="youtubeUrl" placeholder="Paste YouTube link here">
+      <button id="playYoutube">Play</button>
+      <div id="player"></div>
+    </div>
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
